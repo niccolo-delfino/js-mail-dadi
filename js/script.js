@@ -9,7 +9,14 @@ function() {
   console.log(tuoTiro);
   var npcTiro = Math.floor(Math.random()*6) + 1;
   console.log(npcTiro);
+  var risultato = 'Hai perso! :()'
 
+  if (tuoTiro > npcTiro) {
+    risultato = 'Hai vinto! :)'
+  }else if (tuoTiro == npcTiro) {
+    risultato = 'Hai pareggiato! :/'
+  }
+  console.log(risultato);
 
 
 }
