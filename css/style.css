@@ -4,12 +4,16 @@
   box-sizing: border-box;
 }
 
+body{
+  text-align: center;
+}
+
 .pulsante{
   margin-top: 40px;
 }
 
 .btn{
-  padding: 25px 30px;
+  padding: 10px 30px;
   border: 1px solid black;
   background-color: lightgrey;
   border-radius: 5px;
@@ -17,4 +21,28 @@
 
 .btn:hover{
   cursor: pointer;
+}
+
+#risultati{
+  margin-top: 40px;
+}
+
+.blue{
+  color: blue;
+}
+
+.green{
+  color: green;
+}
+
+.red{
+  color: red;
+}
+
+.hidden{
+  opacity: 0;
+}
+
+.show{
+  opacity: 1;
 }

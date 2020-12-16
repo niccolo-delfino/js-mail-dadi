@@ -6,17 +6,28 @@ pulsanteLancia.addEventListener('click',
 function() {
 
   var tuoTiro = Math.floor(Math.random()*6) + 1;
-  console.log(tuoTiro);
   var npcTiro = Math.floor(Math.random()*6) + 1;
-  console.log(npcTiro);
-  var risultato = 'Hai perso! :()'
+  var risultato = 'Hai perso! :('
+
+  document.getElementById('fine').className = 'red';
 
   if (tuoTiro > npcTiro) {
     risultato = 'Hai vinto! :)'
+    document.getElementById('fine').className = 'green';
   }else if (tuoTiro == npcTiro) {
     risultato = 'Hai pareggiato! :/'
+    document.getElementById('fine').className = 'blue';
   }
-  console.log(risultato);
+
+  document.getElementById('tuoLancio').innerHTML = tuoTiro;
+  document.getElementById('npcLancio').innerHTML = npcTiro;
+  document.getElementById('fine').innerHTML = risultato;
+
+  document.getElementById('risultati').className = 'show';
+
+
+
+
 
 
 }
